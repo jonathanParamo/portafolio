@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+@layer base {
+  .dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 20, 25, var(--tw-bg-opacity)); /* Fondo oscuro */
+  }
+
+  .dark .text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(243, 244, 246, var(--tw-text-opacity)); /* Texto claro */
+  }
+
+  .dark .bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity)); /* Fondo secundario oscuro */
+  }
+}
+
+.bg-dark-primary {
+  background-color: rgba(16, 20, 25, 1); /* Color de fondo oscuro */
+}
